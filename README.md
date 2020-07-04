@@ -1,4 +1,4 @@
-#GradientSquid
+# GradientSquid
 
 ## Screenshots
 ![screen1](https://media.discordapp.net/attachments/635625925748457482/728824094103175228/unknown.png)
