@@ -1,39 +1,33 @@
-# Frosted
+# Dribbblish
 
-## Spicetify Theme
+## Screenshots
+[!screen1](https://media.discordapp.net/attachments/635625925748457482/728824094103175228/unknown.png?width=888&height=499)
 
-This theme is meant to be a transparent theme for use with backgrounds and blurred effects.
 
-#### *Important:*
+## More
+### How to install
+Run these command:
 
-This theme would have had to overwrite a lot of the colors set by spicetify, so instead I opted to make the theme with the replace_colors config off. If you install this and your spotify is completely black then you didn't read the installation instructions all the way.
+#### Linux and MacOS:
+In **Bash**:
+```bash
+cd "$HOME/.config/spicetify/Themes/GradientSquid"
+cp dribbblish.js ../../Extensions
+spicetify config extensions dribbblish.js
+spicetify config current_theme Dribbblish color_scheme base
+spicetify config inject_css 1 replace_colors 0 overwrite_assets 1
+spicetify apply
+```
 
-### Installation
+#### Windows
+In **Powershell**:
+```powershell
+cd "$(spicetify -c | Split-Path)\Themes\Dribbblish"
+Copy-Item dribbblish.js ..\..\Extensions
+spicetify config extensions dribbblish.js
+spicetify config current_theme Dribbblish color_scheme base
+spicetify config inject_css 1 replace_colors 0 overwrite_assets 1
+spicetify apply
+```
 
-To install the current version:
-
-* Clone/Download this repo
-* Copy the Frosted folder into your spicetify themes folder
-* Run `spicetify config replace_colors 0 current_theme Frosted`
-* Profit
-
-### Updating
-
-To update:
-
-* Open a terminal in the folder location and then just `git pull`
-* If for some reason this fails, just re-install
-
-### Bugs & Issues
-
-I know there are a ton of bugs and I am actively working on fixing them. With that being said, please don't spam this repo with issues, as I know they exist. Please only post issues that make the app unusable, that way I can prioritize those.
-
-I just recently modularized my code using stylus which will make it easier to maintain in the long run and make it easier to fix bugs and add features. Expect plenty of updates.
-
-### Communication
-
-I am fairly often scouring the [Spectrum group for Spicetify-cli](https://spectrum.chat/spicetify?tab=posts) and that is the best place to reach me for now.
-
-### Lack of Screenshots
-
-It's late and I'm pretty tired and I posted screenshots in the spectrum group, so look there under the Themes > Blurred Background. They are a little outdated but still pretty accurate.
+Windows user, please edit your Spotify shortcut and add flag `--transparent-window-controls` after the Spotify.exe
