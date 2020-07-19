@@ -1,51 +1,59 @@
 :root {
-    /* New Config */
-    --bg1: url("https://wallpapersite.com/images/pages/pic_w/14537.jpg");
-    --bg2: url("https://i.pinimg.com/originals/da/ec/8d/daec8d755fe71408084e214a7b17460f.jpg");
-    --bg3: url("https://wallpapershome.com/images/pages/pic_hs/5321.jpg");
-    --bg: var(--bg2);
-    --bgcolor: #333;
-    --bar-height: 70px;
-    --bar-cover-art-size: 40px;
-    --cover-border-radius: 8px;
-    --section-border-radius: 8px;
-    --sidebar-width: 85px;
-    --main-corner-radius: 15px;
-    --main-gap: 10px;
-    --accent-color: #fd5252;
-    --accent-gradient: linear-gradient(to right, #420101 0%, #fd5252 100%);
-    --accent-color: #fd5252;
-    --accent-gradient: linear-gradient(to right, #420101 0%, #fd5252 100%);
-    --accent: var(--accent-color);
-    --overlay: rgba(0,0,0,0.1);
-    --modspotify_main_fg: var(--accent-color);
-    --modspotify_main_bg: var(--modspotify_main_fg);
-    /* I suggest not messing with this one tbh */
-    --blur: 0px;
-    --wallblur: 10px;
-    --sideblur: 0px;
-    --bannerblur: 0px;
-    --friendblur: 0px;
-    --musicplayerblur: 0px;
-    --accentblur: 0px;
-    /* Change's wether the album wall is on! */
-   --turn-album-wall-on: 0;
-   --turn-wall-on: 1;
-   /* Often a Bland color!, */
-   /* Keep at current value for custom bg, or color! */
+	--bar-height: 70px;
+	--bar-cover-art-size: 40px;
+	--cover-border-radius: 8px;
+	--section-border-radius: 8px;
+	--sidebar-width: 85px;
+	--main-corner-radius: 15px;
+	--main-gap: 10px;
+	/* If you are using SpotifyNoControl.exe, set this variable to 0 */
+	--os-windows-icon-dodge: 1;
+	--main_fg: #f4e6ff;
+	--active_control_fg: #A671A9;
+	--secondary_fg: #363636;
+	--secondary_bg: #A671A9;
+	--main_bg: #BE809C;
+	--sidebar_and_player_bg: #a671a8;
+	--cover_overlay_and_shadow: #202020;
+	--indicator_fg_and_button_bg: #ffffff;
+	--pressing_fg: #1a73e8;
+	--slider_bg: #b4b7b4;
+	--sidebar_indicator_and_hover_button_bg: #dedede;
+	--scrollbar_fg_and_selected_row_bg: #f1f1f1;
+	--pressing_button_fg: #5f5e68;
+	--pressing_button_bg: #202124;
+	--selected_button: #4285f4;
+	--miscellaneous_bg: #fdd4ff;
+	--miscellaneous_hover_bg: #f4e6ff;
+	--preserve_1: #fdd4ff;
+	--bg1: url("https://wallpapersite.com/images/pages/pic_w/14537.jpg");
+	--bg2: url("https://cdn.discordapp.com/attachments/699685435198144553/733469916232941639/wallpaper3.png");
+	--bg3: url("https://wallpapershome.com/images/pages/pic_hs/5321.jpg");
+	--bg: var(--bg2);
+	--bgcolor: #333;
+	--accent-color:
+	--accent-gradient: linear-gradient(to right, #420101 0%, #fd5252 100%);
+	--overlay: rgba(0,0,0,0.1);
+	--wallblur: 15px;
 
-   /* Change for round-ier coners on album art! */
-   --cover-border-radius: 10px;
-   /* Set color vars to other vars */
-   --modspotify_secondary_fg: var(--accent-color);
-   --modspotify_main_fg: var(--modspotify_secondary_fg);
-   --modspotify_main_bg: var(--modspotify_secondary_fg);
-   --modspotify_rgb_cover_overlay_and_shadow: var(--modspotify_secondary_fg);
-   
-   /* WARNING DO NOT CHANGE THESE VALUES */
-   /* WARNING DO NOT ADD ';' */
-   --modspotify_secondary_bg: var(--modspotify_secondary_fg)
-   --accent: var(--accent-color)
+	/* these blur vars don't mean anything yet */
+	--sideblur: 0px;
+	--bannerblur: 0px;
+	--friendblur: 0px;
+	--musicplayerblur: 0px;
+	--accentblur: 0px;
+
+	/* I suggest not messing with this one tbh */
+	--blur: 0px;
+
+	/* pretty self explanatory */
+	--turn-album-wall-on: 0;
+	--turn-wall-on: 1;
+
+	/* WARNING DO NOT CHANGE THESE VALUES */
+	/* WARNING DO NOT ADD ';' */
+	--modspotify_secondary_bg: var(--modspotify_secondary_fg)
+	--accent: var(--accent-color)
 }
 
 @font-face {
@@ -262,7 +270,7 @@ body.remotebar .view-player .player-bar-wrapper {
 .glue-page-header__content .glue-page-header__count-label {
   background-color: transparent;
   color: var(--accent-color)
-  
+
 }
 
 #list-placeholder,
@@ -355,57 +363,6 @@ body.remotebar .view-player .player-bar-wrapper {
 }
 .empty-filtered-content {
   border: none;
-}
-.scrollbar-style-visible-mac::-webkit-scrollbar,
-.scrollbar-style-visible-mac ::-webkit-scrollbar,
-.scrollbar-style-visible-windows::-webkit-scrollbar,
-.scrollbar-style-visible-windows ::-webkit-scrollbar,
-.scrollbar-style-visible-linux::-webkit-scrollbar,
-.scrollbar-style-visible-linux ::-webkit-scrollbar {
-  width: 16px !important;
-}
-.scrollbar-style-visible-mac::-webkit-scrollbar-button,
-.scrollbar-style-visible-mac ::-webkit-scrollbar-button,
-.scrollbar-style-visible-windows::-webkit-scrollbar-button,
-.scrollbar-style-visible-windows ::-webkit-scrollbar-button,
-.scrollbar-style-visible-linux::-webkit-scrollbar-button,
-.scrollbar-style-visible-linux ::-webkit-scrollbar-button {
-  background-color: rgba(0,0,0,0.7) !important;
-}
-.scrollbar-style-visible-mac::-webkit-scrollbar-corner,
-.scrollbar-style-visible-mac ::-webkit-scrollbar-corner,
-.scrollbar-style-visible-windows::-webkit-scrollbar-corner,
-.scrollbar-style-visible-windows ::-webkit-scrollbar-corner,
-.scrollbar-style-visible-linux::-webkit-scrollbar-corner,
-.scrollbar-style-visible-linux ::-webkit-scrollbar-corner {
-  background-color: rgba(0,0,0,0.7) !important;
-}
-.scrollbar-style-visible-mac::-webkit-scrollbar-thumb,
-.scrollbar-style-visible-mac ::-webkit-scrollbar-thumb,
-.scrollbar-style-visible-windows::-webkit-scrollbar-thumb,
-.scrollbar-style-visible-windows ::-webkit-scrollbar-thumb,
-.scrollbar-style-visible-linux::-webkit-scrollbar-thumb,
-.scrollbar-style-visible-linux ::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.7) !important;
-  min-height: 32px;
-  min-width: 32px;
-}
-.scrollbar-style-visible-mac ::-webkit-scrollbar-track,
-.scrollbar-style-visible-mac::-webkit-scrollbar-track,
-.scrollbar-style-visible-windows ::-webkit-scrollbar-track,
-.scrollbar-style-visible-windows::-webkit-scrollbar-track,
-.scrollbar-style-visible-linux ::-webkit-scrollbar-track,
-.scrollbar-style-visible-linux::-webkit-scrollbar-track {
-  background-color: rgba(0,0,0,0.2) !important;
-}
-.scrollbar-style-visible-windows::-webkit-scrollbar-button,
-.scrollbar-style-visible-windows ::-webkit-scrollbar-button,
-.scrollbar-style-visible-linux::-webkit-scrollbar-button,
-.scrollbar-style-visible-linux ::-webkit-scrollbar-button {
-  background-color: rgba(0,0,0,0.7) !important;
-  background-size: 16px 64px;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 #menu-wrapper,
 .sidebar .sidebar-navbar {
@@ -566,20 +523,6 @@ iframe {
     display: none !important;
 }
 
-/*Thinner scrollbar*/
-
-::-webkit-scrollbar {
-    height: 6px !important;
-    width: 6px !important;
-    background-color: var(--accent-color);
-    background-image: var(--accent-gradient);
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--accent-color);
-    background-image: var(--accent-gradient);
-}
-
 /*Round corner scrollbar*/
 
 ::-webkit-scrollbar-thumb {
@@ -651,8 +594,7 @@ iframe {
 
 .SearchInput__input {
     color: #fff;
-    background-color: var(--accent-color);
-    background-image: var(--accent-gradient);
+    background: transparent;
     padding-left: 34px;
     border-radius: 0;
     border-bottom: 0;
@@ -801,8 +743,7 @@ body:not(.body-container--windows) .content-top-bar__profile-menu-button .dropdo
 /* Home page */
 
 .tracklist-podcast .tl-progress .row-progress__bar {
-    background-color: var(--modspotify_main_fg);
-    background-image: var(--accent-gradient);
+    background: transparent;
 }
 
 .Header__background-color {
@@ -834,8 +775,7 @@ body:not(.body-container--windows) .content-top-bar__profile-menu-button .dropdo
 .button.button-icon-with-stroke {
     border-radius: 20px;
     border: 0;
-    background-color: var(--accent-color);
-    background-image: var(--accent-gradient);
+    background: #fff;
     color: var(--modspotify_secondary_fg) !important;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.16) !important;
 }
@@ -855,8 +795,7 @@ body:not(.body-container--windows) .content-top-bar__profile-menu-button .dropdo
 .Button--style-icon-background:hover,
 .button.button-icon-with-stroke:hover {
     transform: none !important;
-    background-color: var(--accent-color);
-    background-image: var(--accent-gradient);
+    background: #fff;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.26) !important;
 }
 
@@ -1452,197 +1391,11 @@ select {
     z-index: 2;
     /* Glowing effect */
     background-color: transparent;
-    background-image: linear-gradient(to left, #420101 0%, #fd5252 100%);;
+    background-image: transparent;
 }
 body.video-full-screen .view-player {
     left: 0;
     width: 100%;
-}
-
-/* Player Progress bar */
-
-.view-player .now-playing {
-    overflow: unset;
-}
-
-.view-player .now-playing-container .button-add {
-    background-color: transparent;
-    color: var(--accent-color);
-}
-
-.progress-container .progress-bar,
-.progress-container .inner {
-    top: 0 !important;
-    margin-top: 0 !important;
-    height: 2px;
-}
-
-.progress-container .progress-bar-wrapper {
-    top: 4px !important;
-    height: 6px;
-}
-
-.progress-container .progress-bar-wrapper:hover .inner,
-.progress-container .progress-bar-wrapper:hover .progress-bar,
-.progress-container .progress-bar-wrapper.active .inner,
-.progress-container .progress-bar-wrapper.active .progress-bar {
-    height: 6px;
-}
-
-.view-player .player-controls-container .progress-container {
-    position: fixed;
-    width: calc(100% - var(--sidebar-width) - var(--main-gap));
-    bottom: calc(var(--bar-height) + var(--main-gap));
-    margin: 0;
-    left: var(--sidebar-width);
-}
-
-body.video-full-screen .view-player .player-controls-container .progress-container {
-    width: 100%;
-    left: 0;
-}
-
-.progress-container .inner {
-    background-color: var(--accent-color)
-    background-image var(--accent-gradient);
-}
-
-#player-text-elapsed,
-#player-text-remaining {
-    display: none;
-}
-
-/* Player Control buttons */
-
-.view-player .player-controls-container {
-    text-align: left;
-    flex: 0 1 18%;
-    order: 0;
-    background: transparent;
-    color: var(--accent-color)
-}
-
-.view-player .player-bar-spacer {
-    display: none;
-    background: transparent;
-    color: var(--accent-color)
-}
-
-.view-player .now-playing-container {
-    flex: 0 1 64%;
-    order: 2;
-    background: transparent;
-    color: var(--accent-color)
-}
-
-.view-player .now-playing-container .caption {
-    align-items: center;
-    justify-content: center;
-    font-family: var(--info-font-family);
-    background: transparent;
-    color: var(--accent-color)
-}
-
-.view-player .track {
-    letter-spacing: 0;
-}
-
-.view-player .track a {x
-    background: transparent;
-    font-weight: 500;
-    color: var(--accent-color)
-}
-
-.view-player .now-playing-container .caption .text-container,
-.view-player .now-playing .cover-image-link-wrapper {
-    flex: unset;
-}
-
-.view-player .extra-controls-container {
-    order: 3;
-    padding-right: 0;
-    background: transparent;
-    color: var(--accent-color)
-}
-
-.view-player .player-controls-container .controls {
-    margin-top: 4px;
-    display: flex;
-    background: transparent;
-    color: var(--accent-color)
-}
-
-button#player-button-previous {
-    order: 1;
-}
-
-button#player-button-play {
-    order: 2;
-}
-
-.skip-button-container {
-    order: 3;
-}
-
-button#player-button-shuffle,
-.view-player button[data-interaction-intent="skip-back"] {
-    order: 4;
-}
-
-button#player-button-repeat,
-.view-player button[data-interaction-target="skip-forward-button"] {
-    order: 5;
-}
-
-button#player-button-thumbs-down,
-.view-player button[data-interaction-intent="skip-back"] {
-    order: 4;
-    background: transparent;
-}
-
-.view-player .thumbs-up {
-        background: transparent;
-}
-
-.view-player .thumbs-down {
-        background: transparent;
-}
-
-button#player-button-thumbs-up,
-.view-player button[data-interaction-target="skip-forward-button"] {
-    order: 5;
-    background: transparent;
-}
-
-.view-player .player-controls-container .controls .button-thumbs-down.active,
-.view-player .player-controls-container .controls .button-thumbs-up.active {
-    color: var(--modspotify_active_control_fg);
-    background: transparent
-}
-
-.view-player .player-controls-container .controls .button-thumbs-down,
-.view-player .player-controls-container .controls .button-thumbs-up {
-    color: var(--modspotify_active_control_fg);
-    background: transparent
-}
-
-.view-player .player-controls-container .controls .button-repeat.active,
-.view-player .player-controls-container .controls .button-shuffle.active {
-    color: var(--modspotify_active_control_fg);
-}
-
-.view-player .player-controls-container .controls .button-play,
-.view-player .player-controls-container .controls .button-play:after {
-    box-shadow: unset !important;
-    border-radius: 0 !important;
-    width: 35px;
-    height: 35px;
-}
-
-.view-player .player-controls-container .controls .button-play:before {
-    font-size: 35px !important;
-    border-radius: 0 !important;
-    padding-left: 0 !important;
 }
 
 /* Player cover art */
@@ -1939,12 +1692,12 @@ div.glue-page-header__background-image:hover {
     border-radius: 0 0 8px 8px;
 }
 
-.ConnectPopup__wallpaper { 
+.ConnectPopup__wallpaper {
     background: var(--bg);
     filter: blur(25px);
 }
 
-.ConnectPopup__background { 
+.ConnectPopup__background {
     background: var(--bg);
     filter: blur(25px);
 }
@@ -2008,4 +1761,98 @@ div.inner {
     background: unset;
     z-index: 3;
     pointer-events: none;
+}
+#list-placeholder, #tracklist-container {
+    background: transparent;
+    backdrop-filter: blur(var(--wallblur));
+}
+.content-top-bar {
+    background-color: transparent;
+}
+.P2SVideoOverlay--is-in-full-screen-mode .P2SVideoOverlay__fade {
+    background: transparent;
+}
+.progress-bar, .progress-bar .inner {
+    background: transparent;
+    border-radius: 2px;
+    margin-top: -2px;
+}
+::-webkit-scrollbar {
+    height: 6px !important;
+    width: 6px !important;
+    background-color: var(--secondary_bg);
+}
+::-webkit-scrollbar-track {
+    background-color: var(--main_fg);
+}
+.scrollbar-style-visible-mac::-webkit-scrollbar,
+.scrollbar-style-visible-mac ::-webkit-scrollbar,
+.scrollbar-style-visible-windows::-webkit-scrollbar,
+.scrollbar-style-visible-windows ::-webkit-scrollbar,
+.scrollbar-style-visible-linux::-webkit-scrollbar,
+.scrollbar-style-visible-linux ::-webkit-scrollbar {
+  width: 16px !important;
+}
+.scrollbar-style-visible-mac::-webkit-scrollbar-button,
+.scrollbar-style-visible-mac ::-webkit-scrollbar-button,
+.scrollbar-style-visible-windows::-webkit-scrollbar-button,
+.scrollbar-style-visible-windows ::-webkit-scrollbar-button,
+.scrollbar-style-visible-linux::-webkit-scrollbar-button,
+.scrollbar-style-visible-linux ::-webkit-scrollbar-button {
+  background-color: var(--main_fg) !important;
+}
+.scrollbar-style-visible-mac::-webkit-scrollbar-corner,
+.scrollbar-style-visible-mac ::-webkit-scrollbar-corner,
+.scrollbar-style-visible-windows::-webkit-scrollbar-corner,
+.scrollbar-style-visible-windows ::-webkit-scrollbar-corner,
+.scrollbar-style-visible-linux::-webkit-scrollbar-corner,
+.scrollbar-style-visible-linux ::-webkit-scrollbar-corner {
+  background-color: #BE809C !important;
+}
+.scrollbar-style-visible-mac::-webkit-scrollbar-thumb,
+.scrollbar-style-visible-mac ::-webkit-scrollbar-thumb,
+.scrollbar-style-visible-windows::-webkit-scrollbar-thumb,
+.scrollbar-style-visible-windows ::-webkit-scrollbar-thumb,
+.scrollbar-style-visible-linux::-webkit-scrollbar-thumb,
+.scrollbar-style-visible-linux ::-webkit-scrollbar-thumb {
+  background: var(--main_fg) !important;
+  min-height: 32px;
+  min-width: 32px;
+}
+.scrollbar-style-visible-mac ::-webkit-scrollbar-track,
+.scrollbar-style-visible-mac::-webkit-scrollbar-track,
+.scrollbar-style-visible-windows ::-webkit-scrollbar-track,
+.scrollbar-style-visible-windows::-webkit-scrollbar-track,
+.scrollbar-style-visible-linux ::-webkit-scrollbar-track,
+.scrollbar-style-visible-linux::-webkit-scrollbar-track {
+  background-color: #BE809C !important;
+}
+.scrollbar-style-visible-windows::-webkit-scrollbar-button,
+.scrollbar-style-visible-windows ::-webkit-scrollbar-button,
+.scrollbar-style-visible-linux::-webkit-scrollbar-button,
+.scrollbar-style-visible-linux ::-webkit-scrollbar-button {
+  background-color: var(--main_fg) !important;
+  background-size: 16px 64px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+[class^=spoticon-]::before, [class*=" spoticon-"]::before {
+    color: #BE809C !important;
+}
+.button.button-green.contextmenu-active, .button.button-green:not(:disabled):hover {
+    background: #BE809C;
+}
+.view-player .extra-controls-container .volumebar-container .progress-bar .inner {
+    background: #BE809C;
+}
+.view-player .now-playing-container .button-add, .view-player .now-playing-container .button-add:not(:disabled):hover, .view-player .now-playing-container .nowplaying-add-button, .view-player .now-playing-container .nowplaying-add-button:not(:disabled):hover, .view-player .now-playing-container .nowplaying-ban-button, .view-player .now-playing-container .nowplaying-ban-button:not(:disabled):hover {
+    color: #BE809C;
+}
+.h-search {
+    background-color: transparent;
+}
+.tl-cell:not(.tl-number), .tl-cell a:link, .tl-highlight, .TableCell:not(.tl-number), .TableCell a:link {
+    color: #fff;
+    background-color: transparent;
 }
