@@ -1,7 +1,7 @@
 # GradientSquid
 
 ## Screenshots
-![screen1](https://media.discordapp.net/attachments/635625925748457482/728824094103175228/unknown.png)
+![screen1](https://cdn.discordapp.com/attachments/699685435198144553/736514785373454366/emoji-1.png)
 
 
 ## More
@@ -14,7 +14,7 @@ In **Bash**:
 cd "$HOME/.config/spicetify/Themes/GradientSquid"
 cp dribbblish.js ../../Extensions
 spicetify config extensions dribbblish.js
-spicetify config current_theme Dribbblish color_scheme base
+spicetify config current_theme GradientSquid
 spicetify config inject_css 1 replace_colors 0 overwrite_assets 1
 spicetify apply
 ```
@@ -22,10 +22,10 @@ spicetify apply
 #### Windows
 In **Powershell**:
 ```powershell
-cd "$(spicetify -c | Split-Path)\Themes\Dribbblish"
+cd "$(spicetify -c | Split-Path)\Themes\GradientSquid"
 Copy-Item dribbblish.js ..\..\Extensions
 spicetify config extensions dribbblish.js
-spicetify config current_theme Dribbblish color_scheme base
+spicetify config current_theme GradientSquid
 spicetify config inject_css 1 replace_colors 0 overwrite_assets 1
 spicetify apply
 ```
